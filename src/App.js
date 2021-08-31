@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
-
+import requests from './requests';
 function App() {
+  const getAllGames = async () =>{
+    try {
+      const req = await fetch(requests.allGame);
+      const data = await req.json();
+      console.log(data.results);
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+
+  useEffect(()=>{
+    getAllGames();
+  },[])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>hello</h1>
     </div>
   );
 }
