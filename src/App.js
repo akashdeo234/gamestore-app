@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import './App.css';
+import Hero from './componets/hero-sec/Hero';
 import requests from './requests';
 function App() {
   const getAllGames = async () =>{
@@ -18,7 +19,7 @@ function App() {
   },[])
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Hero />
     </div>
   );
 }
