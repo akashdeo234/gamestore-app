@@ -5,12 +5,10 @@
   color: white;
   width: 80%;
   height: auto;
-  overflow: hidden;
 }
 
 .top-header .container {
   width: 95%;
-  height: inherit;
   margin: 0% auto;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -61,7 +61,7 @@
   overflow-x: hidden;
   position: absolute;
   bottom: 15%;
-  color: white;
+  color: black;
   left: 120px;
 }
 
@@ -110,6 +110,7 @@
   .topGames-carousel-sec .container .slide-title {
     font-size: 20px;
     left: 11px;
+    color: white;
   }
   .topGames-carousel-sec .container .slide-rating {
     font-size: 10px;
@@ -136,6 +137,7 @@
     bottom: 60px;
     left: 62px;
     font-size: 17px;
+    color: white;
   }
   .topGames-carousel-sec .container .slide-rating {
     bottom: 35px;

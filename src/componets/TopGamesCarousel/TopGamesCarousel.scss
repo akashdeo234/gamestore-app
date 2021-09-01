@@ -52,7 +52,7 @@
       overflow-x: hidden;
       position: absolute;
       bottom: 15%;
-      color: white;
+      color: black;
       left: 120px;
     }
     .slide-rating {
@@ -78,7 +78,7 @@
 }
 
 //mobile
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
   .topGames-carousel-sec {
     max-width: 95%;
     height: 60vh;
@@ -99,6 +99,7 @@
       .slide-title{
         font-size: 20px;
         left: 11px;
+        color: white;
       }
       .slide-rating{
         font-size: 10px;
@@ -126,6 +127,7 @@
         bottom: 60px;
         left: 62px;
         font-size: 17px;
+        color: white;
       }
       .slide-rating {
         bottom: 35px;
