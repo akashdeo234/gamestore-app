@@ -1,0 +1,120 @@
+.top-header {
+  position: fixed;
+  top: 7%;
+  left: 10%;
+  color: white;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+.top-header .container {
+  width: 95%;
+  height: inherit;
+  margin: 0% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-header .container .left h1 {
+  font-size: 45px;
+}
+
+.top-header .container .left p {
+  font-weight: lighter;
+  font-size: 20px;
+  max-width: 800px;
+}
+
+.top-header .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+}
+
+.top-header .container .right .search-icon:hover {
+  opacity: 1.5;
+  color: purple;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.top-header .container .right .profile-icon:hover {
+  opacity: 1.5;
+  color: purple;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.top-header .container .right .search-field {
+  display: none;
+  outline: none;
+  -webkit-transition: padding 0.8s ease-in-out;
+  transition: padding 0.8s ease-in-out;
+}
+
+.top-header .container .right input {
+  outline: none;
+  width: 400px;
+  padding: 0 15px;
+  border-radius: 16px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.top-header .container .right .search-field-active {
+  display: inline-block;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .top-header {
+    top: 20%;
+    left: 2%;
+    width: 94%;
+  }
+  .top-header .container {
+    width: 98%;
+    margin: 0 auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0 20px;
+  }
+  .top-header .container .left h1 {
+    font-size: 20px;
+  }
+  .top-header .container .left p {
+    font-size: 20px;
+    max-width: 300px;
+    max-width: 232px;
+  }
+  .top-header .container .right input {
+    padding: 0% 5px;
+    width: 100px;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .top-header {
+    left: 14%;
+  }
+  .top-header .container .left p {
+    max-width: 354px;
+  }
+  .top-header .container .right input {
+    width: 185px;
+    padding: 0 10px;
+  }
+}
+/*# sourceMappingURL=TopHeader.css.map */

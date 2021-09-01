@@ -1,20 +1,21 @@
 $bg-color: #111e36;
 
-img {
-  width: 30px;
-  cursor: pointer;
-  opacity: 0.4;
-  transition: 0.3s ease-in-out;
-}
-img:hover{
-  opacity: 1.5;
-}
 
 .header {
   position: fixed;
   top: 6%;
   height: 85vh;
   width: 80px;
+
+  img{
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.3s ease-in-out;
+  }
+  img:hover{
+    opacity: 1.5;
+  }
  
   background-color: $bg-color;
   border-radius: 50px;

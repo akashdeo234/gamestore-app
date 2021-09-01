@@ -1,0 +1,144 @@
+.topGames-carousel-sec {
+  padding-bottom: 50px;
+  background-color: #030d1d;
+  max-width: 78%;
+  margin: 0% auto;
+  height: 62vh;
+  color: white;
+  overflow: hidden;
+ // border: hotpink solid 2px;
+ 
+
+  .container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .image {
+      width: 1100px;
+      height: 450px;
+      border-radius: 60px;
+      object-fit: cover;
+    }
+
+    .left-arrow {
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      left: 70px;
+      font-size: 3rem;
+      color: black;
+      opacity: 0.2;
+    }
+    .left-arrow,
+    .right-arrow:hover {
+      opacity: 1.5;
+    }
+    .right-arrow {
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      right: 70px;
+      font-size: 3rem;
+      color: black;
+      opacity: 0.8;
+    }
+    .slide-title {
+      max-width: 500px;
+      overflow-x: hidden;
+      position: absolute;
+      bottom: 15%;
+      color: white;
+      left: 120px;
+    }
+    .slide-rating {
+      cursor: pointer;
+      background-color: purple;
+      opacity: 0.7;
+      padding: 5px 40px;
+      font-size: 12px;
+      border-radius: 20px;
+      font-weight: 400;
+      max-width: 500px;
+      overflow-x: hidden;
+      position: absolute;
+      bottom: 9%;
+      color: white;
+      left: 120px;
+      transition: 0.8s ease-in-out;
+    }
+    .slide-rating:hover {
+      opacity: 1.5;
+    }
+  }
+}
+
+//mobile
+@media (max-width: 767px) {
+  .topGames-carousel-sec {
+    max-width: 95%;
+    height: 60vh;
+    padding: 0;
+    overflow: hidden;
+    .container {
+     max-width: 90%;
+      .image {
+        width: 370px;
+        border-radius: 10px;
+      }
+      .left-arrow{
+        left: 3px;
+      }
+      .right-arrow{
+        right: 3px;
+      }
+      .slide-title{
+        font-size: 20px;
+        left: 11px;
+      }
+      .slide-rating{
+        font-size: 10px;
+        left: 11px;
+        bottom: 35px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//ipad
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .topGames-carousel-sec {
+    height: 41vh;
+    .container {
+      top: 0;
+     left: 22px;
+      .image {
+        max-width: 610px;
+        height: 409px;
+        border-radius: 10px;
+      }
+      .slide-title {
+        bottom: 60px;
+        left: 62px;
+        font-size: 17px;
+      }
+      .slide-rating {
+        bottom: 35px;
+        padding: 5px 22px;
+        left: 62px;
+        font-size: 9px;
+      }
+      .left-arrow{
+        left: 13px;
+      }
+      .right-arrow{
+        right: 13px;
+      }
+    }
+  }
+}

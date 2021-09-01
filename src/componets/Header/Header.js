@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.scss";
+import "./header.css";
 import logo from "./logo.svg";
 import homeLogo from "./home-logo.svg";
 import wishListLogo from "./wishlist-logo.svg";

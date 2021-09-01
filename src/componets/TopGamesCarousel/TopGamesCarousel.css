@@ -1,0 +1,153 @@
+.topGames-carousel-sec {
+  padding-bottom: 50px;
+  background-color: #030d1d;
+  max-width: 78%;
+  margin: 0% auto;
+  height: 62vh;
+  color: white;
+  overflow: hidden;
+}
+
+.topGames-carousel-sec .container {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topGames-carousel-sec .container .image {
+  width: 1100px;
+  height: 450px;
+  border-radius: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topGames-carousel-sec .container .left-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 70px;
+  font-size: 3rem;
+  color: black;
+  opacity: 0.2;
+}
+
+.topGames-carousel-sec .container .left-arrow,
+.topGames-carousel-sec .container .right-arrow:hover {
+  opacity: 1.5;
+}
+
+.topGames-carousel-sec .container .right-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 70px;
+  font-size: 3rem;
+  color: black;
+  opacity: 0.8;
+}
+
+.topGames-carousel-sec .container .slide-title {
+  max-width: 500px;
+  overflow-x: hidden;
+  position: absolute;
+  bottom: 15%;
+  color: white;
+  left: 120px;
+}
+
+.topGames-carousel-sec .container .slide-rating {
+  cursor: pointer;
+  background-color: purple;
+  opacity: 0.7;
+  padding: 5px 40px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 400;
+  max-width: 500px;
+  overflow-x: hidden;
+  position: absolute;
+  bottom: 9%;
+  color: white;
+  left: 120px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+}
+
+.topGames-carousel-sec .container .slide-rating:hover {
+  opacity: 1.5;
+}
+
+@media (max-width: 767px) {
+  .topGames-carousel-sec {
+    max-width: 95%;
+    height: 60vh;
+    padding: 0;
+    overflow: hidden;
+  }
+  .topGames-carousel-sec .container {
+    max-width: 90%;
+  }
+  .topGames-carousel-sec .container .image {
+    width: 370px;
+    border-radius: 10px;
+  }
+  .topGames-carousel-sec .container .left-arrow {
+    left: 3px;
+  }
+  .topGames-carousel-sec .container .right-arrow {
+    right: 3px;
+  }
+  .topGames-carousel-sec .container .slide-title {
+    font-size: 20px;
+    left: 11px;
+  }
+  .topGames-carousel-sec .container .slide-rating {
+    font-size: 10px;
+    left: 11px;
+    bottom: 35px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .topGames-carousel-sec {
+    height: 41vh;
+  }
+  .topGames-carousel-sec .container {
+    top: 0;
+    left: 22px;
+  }
+  .topGames-carousel-sec .container .image {
+    max-width: 610px;
+    height: 409px;
+    border-radius: 10px;
+  }
+  .topGames-carousel-sec .container .slide-title {
+    bottom: 60px;
+    left: 62px;
+    font-size: 17px;
+  }
+  .topGames-carousel-sec .container .slide-rating {
+    bottom: 35px;
+    padding: 5px 22px;
+    left: 62px;
+    font-size: 9px;
+  }
+  .topGames-carousel-sec .container .left-arrow {
+    left: 13px;
+  }
+  .topGames-carousel-sec .container .right-arrow {
+    right: 13px;
+  }
+}
+/*# sourceMappingURL=TopGamesCarousel.css.map */

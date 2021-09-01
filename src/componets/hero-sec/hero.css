@@ -1,14 +1,10 @@
-$bg-color: #030d1d;
-
 .hero-sec {
   height: 32vh;
-  background-color: $bg-color;
+  background-color: #030d1d;
   overflow: hidden;
-  //border: 1px solid greenyellow;
   padding: 10px 0;
 }
 
-//mobile
 @media (max-width: 767px) {
   .hero-sec {
     height: 41vh;
@@ -17,9 +13,9 @@ $bg-color: #030d1d;
   }
 }
 
-//ipad
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .hero-sec{
-        height: 24vh;
-    }
+  .hero-sec {
+    height: 24vh;
+  }
 }
+/*# sourceMappingURL=hero.css.map */

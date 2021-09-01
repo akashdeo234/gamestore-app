@@ -1,0 +1,14 @@
+.game-on-sale-sec {
+  background-color: #030d1d;
+  height: 40vh;
+  color: white;
+}
+
+.game-on-sale-sec .container {
+  width: 78%;
+  position: absolute;
+  left: 12%;
+  height: inherit;
+  margin: 0% auto;
+}
+/*# sourceMappingURL=GameOnSale.css.map */
