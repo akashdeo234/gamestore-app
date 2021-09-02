@@ -1,5 +1,5 @@
 .top-header {
-  position: fixed;
+  position: absolute;
   top: 7%;
   left: 10%;
   color: white;
@@ -74,7 +74,29 @@
   transition: 0.8s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .top-header {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+  }
+  .top-header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 36px 0;
+  }
+  .top-header .container .right input {
+    width: 191px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
   .top-header {
     top: 20%;
     left: 2%;

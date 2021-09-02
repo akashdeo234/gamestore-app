@@ -1,5 +1,5 @@
 .top-header {
-  position: fixed;
+  position: absolute;
   top: 7%;
   left: 10%;
   color: white;
@@ -56,8 +56,34 @@
   }
 }
 
+// mobile iphone se
+@media only screen and (min-width: 320px) and (max-width: 370px){
+  .top-header{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+
+    .container{
+      flex-direction: column;
+      align-items: start;
+      gap: 36px 0;
+
+      .right{
+        input{
+          width: 191px;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
 //mobile
-@media (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .top-header {
     top: 20%;
     left: 2%;

@@ -13,7 +13,7 @@ function App() {
   const [allGames, setAllGames] = useState([]);
 
   //state to store only action games
-  const [actionGames, setActionGames] = useState([]);
+  const [topGames, setTopGames] = useState([]);
 
   //Getting all games details
   const getAllGames = async () => {
@@ -46,6 +46,7 @@ function App() {
       .request(options)
       .then(function (response) {
         console.log(response.data);
+        setTopGames(response.data)
         setIsLoading(false);
       })
       .catch(function (error) {
@@ -65,7 +66,7 @@ function App() {
     <div className="App">
       <Hero />
       {isLoading ? <Loading /> : <TopGamesCarousel allGames={allGames} />}
-      {isLoading ? <Loading /> : <GameOnSale actionGames={actionGames} />}
+      {isLoading ? <Loading /> : <GameOnSale topGames={topGames} />}
     </div>
   );
 }

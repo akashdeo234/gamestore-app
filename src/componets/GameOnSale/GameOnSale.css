@@ -1,15 +1,90 @@
 .game-on-sale-sec {
   background-color: #030d1d;
+  width: 76%;
+  margin: 0px auto;
   height: 40vh;
   color: white;
   padding: 40px 0;
 }
 
 .game-on-sale-sec .container {
-  width: 78%;
+  width: inherit;
   position: absolute;
-  left: 12%;
   height: inherit;
   margin: 0% auto;
+}
+
+.game-on-sale-sec .container h1 {
+  max-width: 320px;
+  margin-bottom: 25px;
+}
+
+.game-on-sale-sec .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 0 25px;
+}
+
+.game-on-sale-sec .container .row .row-iteam img {
+  width: 365px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.game-on-sale-sec .container .row .row-iteam img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .game-on-sale-sec {
+    height: 100vh;
+    width: 96%;
+  }
+  .game-on-sale-sec .container {
+    text-align: center;
+    width: inherit;
+  }
+  .game-on-sale-sec .container h1 {
+    text-align: center;
+    max-width: 200px;
+    font-size: 16px;
+    margin-left: 46px;
+  }
+  .game-on-sale-sec .container .row {
+    gap: 0 15px;
+  }
+  .game-on-sale-sec .container .row .row-iteam img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .game-on-sale-sec {
+    width: 96%;
+  }
+  .game-on-sale-sec .container h1 {
+    max-width: 220px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 66px;
+  }
+  .game-on-sale-sec .container .row {
+    gap: 0 15px;
+  }
+  .game-on-sale-sec .container .row .row-iteam img {
+    width: 294px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .game-on-sale-sec {
+    width: 72%;
+  }
 }
 /*# sourceMappingURL=GameOnSale.css.map */

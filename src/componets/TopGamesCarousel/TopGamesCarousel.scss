@@ -6,8 +6,7 @@
   height: 62vh;
   color: white;
   overflow: hidden;
- // border: hotpink solid 2px;
- 
+  // border: hotpink solid 2px;
 
   .container {
     width: inherit;
@@ -16,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     .image {
       width: 1100px;
@@ -32,11 +30,8 @@
       left: 70px;
       font-size: 3rem;
       color: black;
-      opacity: 0.2;
-    }
-    .left-arrow,
-    .right-arrow:hover {
-      opacity: 1.5;
+      background-color: purple;
+      border-radius: 50%;
     }
     .right-arrow {
       position: absolute;
@@ -45,7 +40,8 @@
       right: 70px;
       font-size: 3rem;
       color: black;
-      opacity: 0.8;
+      background-color: purple;
+      border-radius: 50%;
     }
     .slide-title {
       max-width: 500px;
@@ -77,31 +73,67 @@
   }
 }
 
+// mobile iphone se
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .topGames-carousel-sec {
+    max-width: 96%;
+    margin-top: 66px;
+
+    .container {
+      .left-arrow {
+        left: 0px;
+        padding: 9px;
+      }
+      .right-arrow {
+        right: 0px;
+        padding: 9px;
+      }
+
+      .image {
+        width: 500px;
+      }
+
+      .slide-title {
+        left: 18px;
+        font-size: 18px;
+      }
+      .slide-rating {
+        left: 18px;
+        font-size: 8px;
+        bottom: 7%;
+        padding: 5px 21px;
+      }
+    }
+  }
+}
+
 //mobile
-@media (max-width: 767px) { 
+@media (min-width: 375px) and (max-width: 767px) {
   .topGames-carousel-sec {
     max-width: 95%;
     height: 60vh;
     padding: 0;
     overflow: hidden;
     .container {
-     max-width: 90%;
+      max-width: 90%;
       .image {
         width: 370px;
         border-radius: 10px;
       }
-      .left-arrow{
+      .left-arrow {
         left: 3px;
+        padding: 9px;
       }
-      .right-arrow{
+      .right-arrow {
         right: 3px;
+        padding: 9px;
       }
-      .slide-title{
+      .slide-title {
         font-size: 20px;
         left: 11px;
         color: white;
       }
-      .slide-rating{
+      .slide-rating {
         font-size: 10px;
         left: 11px;
         bottom: 35px;
@@ -112,12 +144,12 @@
 }
 
 //ipad
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .topGames-carousel-sec {
     height: 41vh;
     .container {
       top: 0;
-     left: 22px;
+      left: 22px;
       .image {
         max-width: 610px;
         height: 409px;
@@ -135,11 +167,40 @@
         left: 62px;
         font-size: 9px;
       }
-      .left-arrow{
+      .left-arrow {
         left: 13px;
+        padding: 9px;
       }
-      .right-arrow{
-        right: 13px;
+      .right-arrow {
+        right: 7%;
+        padding: 9px;
+      }
+    }
+  }
+}
+
+//ipad pro
+@media only screen and (min-width: 1024px) and (max-width: 1100px) {
+  .topGames-carousel-sec {
+    .container {
+      left: 5px;
+      .image {
+        max-width: 800px;
+      }
+      .slide-title {
+        bottom: 145px;
+        font-size: 24px;
+      }
+      .slide-rating {
+        bottom: 110px;
+        font-size: 12px;
+      }
+      .left-arrow{
+        padding: 7px;
+      }
+      .right-arrow {
+        right: 3%;
+        padding: 7px;
       }
     }
   }
