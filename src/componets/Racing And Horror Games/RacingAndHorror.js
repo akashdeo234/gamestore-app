@@ -1,8 +1,8 @@
-import React, { useContext, useState } from "react";
-import "./GameOnSale.css";
+import React, { useContext } from "react";
+import "./RacingAndHorror.css";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { userContext } from "../../context";
-function GameOnSale({ topGames, isShootingGames }) {
+function RacingAndHorror({ racingGames, isRacingGames }) {
   //context
 
   const { data, setData } = useContext(userContext);
@@ -13,23 +13,23 @@ function GameOnSale({ topGames, isShootingGames }) {
     setData({ img, name });
   };
 
-  let maxImages = 10;
-
+  let maxImages = 9;
   return (
-    <div className="game-on-sale-sec">
+    <div className="racing-horror-sec">
       <div className="container">
-        <h1>{!isShootingGames ? "TOP GAMES OF 2021" : "Top Shooting Games"}</h1>
+        <h1>{isRacingGames ? "Top Racing Games" : "Top Horror Games"}</h1>
         <div className="row">
-          {topGames.map((game, index, id) => {
+          {racingGames.map((game, index) => {
             const { thumbnail, title } = game;
             if (index < maxImages) {
               return (
                 <div className="row-iteam" key={index}>
-                  <div style={{ display: "flex" }}>
+                  <div style={{display:'flex'}}>
                     <FavoriteBorderIcon
                       className="heart"
                       onClick={() => addedToFavHandler(thumbnail, title)}
                     />
+                    <p style={{paddingLeft:'5px'}}>Added</p>
                   </div>
                   <img src={thumbnail} alt="image" />
                 </div>
@@ -42,4 +42,4 @@ function GameOnSale({ topGames, isShootingGames }) {
   );
 }
 
-export default GameOnSale;
+export default RacingAndHorror;

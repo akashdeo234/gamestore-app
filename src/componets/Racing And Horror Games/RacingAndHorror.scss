@@ -1,0 +1,112 @@
+.racing-horror-sec {
+    background-color: #030d1d;
+    width: 76%;
+    margin: 0px auto;
+    height: 50vh;
+    color: white;
+    padding: 40px 0;
+    //border: yellow solid 2px;
+  
+    .container {
+      width: inherit;
+      position: absolute;
+      height: inherit;
+      margin: 0% auto;
+  
+      h1 {
+        font-size: 20px;
+        max-width: 320px;
+        margin-bottom: 25px;
+      }
+  
+      .row {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        gap: 0 25px;
+  
+        .row-iteam {
+          img {
+            width: 365px;
+            object-fit: cover;
+            transition: 0.3s ease-in-out;
+          }
+          img:hover {
+            transform: scale(1.1);
+          }
+          .heart{
+            cursor: pointer;
+            fill: red;
+            margin-bottom: 10px ;
+          }
+        }
+      }
+    }
+  }
+  
+  // mobile iphone se
+  @media only screen and (min-width: 320px) and (max-width: 370px) {
+    .racing-horror-sec {
+      height: 41vh;
+      width: 96%;
+      .container {
+        text-align: center;
+        width: inherit;
+        h1 {
+          text-align: center;
+          max-width: 200px;
+          font-size: 16px;
+          margin-left: 46px;
+        }
+  
+        .row {
+          gap: 0 15px;
+          .row-iteam {
+            img {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //mobile
+  @media (min-width: 375px) and (max-width: 767px) {
+    .racing-horror-sec {
+      width: 96%;
+      height: 40vh;
+      .container {
+        h1 {
+          max-width: 220px;
+          font-size: 20px;
+          text-align: center;
+          margin-left: 66px;
+        }
+        .row {
+          gap: 0 15px;
+          .row-iteam {
+            img {
+              width: 294px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  //ipad
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .racing-horror-sec {
+      width: 72%;
+      height: 31vh;
+    }
+  }
+  
+  //ipad pro
+  @media only screen and (min-width: 1024px) and (max-width: 1100px) {
+    .racing-horror-sec {
+      height: 24vh;
+    }
+  }
+  

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import logo from "./logo.svg";
 import homeLogo from "./home-logo.svg";
@@ -13,11 +13,14 @@ function Header() {
         <nav>
           <div className="flex-wrapper">
             <img src={homeLogo} alt="homelogo" className="home-logo"></img>
-            <img
-              src={wishListLogo}
-              alt="wishListlogo"
-              className="wishlist-logo"
-            ></img>
+            <div style={{display:'flex',alignItems:'center'}}>
+              <img
+                src={wishListLogo}
+                alt="wishListlogo"
+                className="wishlist-logo"
+              ></img>
+              {/* <p style={{color:"white",fontSize:'15px',paddingLeft:'5px'}}>{count}</p>*/} 
+            </div>
             <img
               src={accountLogo}
               alt="accountlogo"

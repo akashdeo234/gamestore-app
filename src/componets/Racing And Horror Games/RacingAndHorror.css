@@ -1,4 +1,4 @@
-.game-on-sale-sec {
+.racing-horror-sec {
   background-color: #030d1d;
   width: 76%;
   margin: 0px auto;
@@ -7,20 +7,20 @@
   padding: 40px 0;
 }
 
-.game-on-sale-sec .container {
+.racing-horror-sec .container {
   width: inherit;
   position: absolute;
   height: inherit;
   margin: 0% auto;
 }
 
-.game-on-sale-sec .container h1 {
+.racing-horror-sec .container h1 {
   font-size: 20px;
   max-width: 320px;
   margin-bottom: 25px;
 }
 
-.game-on-sale-sec .container .row {
+.racing-horror-sec .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   gap: 0 25px;
 }
 
-.game-on-sale-sec .container .row .row-iteam img {
+.racing-horror-sec .container .row .row-iteam img {
   width: 365px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -37,69 +37,69 @@
   transition: 0.3s ease-in-out;
 }
 
-.game-on-sale-sec .container .row .row-iteam img:hover {
+.racing-horror-sec .container .row .row-iteam img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.game-on-sale-sec .container .row .row-iteam .heart {
+.racing-horror-sec .container .row .row-iteam .heart {
   cursor: pointer;
   fill: red;
   margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 370px) {
-  .game-on-sale-sec {
+  .racing-horror-sec {
     height: 41vh;
     width: 96%;
   }
-  .game-on-sale-sec .container {
+  .racing-horror-sec .container {
     text-align: center;
     width: inherit;
   }
-  .game-on-sale-sec .container h1 {
+  .racing-horror-sec .container h1 {
     text-align: center;
     max-width: 200px;
     font-size: 16px;
     margin-left: 46px;
   }
-  .game-on-sale-sec .container .row {
+  .racing-horror-sec .container .row {
     gap: 0 15px;
   }
-  .game-on-sale-sec .container .row .row-iteam img {
+  .racing-horror-sec .container .row .row-iteam img {
     width: 250px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .game-on-sale-sec {
+  .racing-horror-sec {
     width: 96%;
     height: 40vh;
   }
-  .game-on-sale-sec .container h1 {
+  .racing-horror-sec .container h1 {
     max-width: 220px;
     font-size: 20px;
     text-align: center;
     margin-left: 66px;
   }
-  .game-on-sale-sec .container .row {
+  .racing-horror-sec .container .row {
     gap: 0 15px;
   }
-  .game-on-sale-sec .container .row .row-iteam img {
+  .racing-horror-sec .container .row .row-iteam img {
     width: 294px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .game-on-sale-sec {
+  .racing-horror-sec {
     width: 72%;
     height: 31vh;
   }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1100px) {
-  .game-on-sale-sec {
+  .racing-horror-sec {
     height: 24vh;
   }
 }
-/*# sourceMappingURL=GameOnSale.css.map */
+/*# sourceMappingURL=RacingAndHorror.css.map */
